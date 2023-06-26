@@ -9,7 +9,7 @@ def GetRandomString():
     j = string.ascii_letters + string.ascii_uppercase
     return (''.join(random.choice(j) for x in range(12)))
 def SetConsTitle():
-    return ctypes.windll.kernel32.SetConsoleTitleW(GetRandomString()) #SetConsoleTitleA in ANSI Code :D
+    return ctypes.windll.kernel32.SetConsoleTitleW(GetRandomString()) #SetConsoleTitleA in ANSI Type, SetConsoleTitleW in UNICODE Type :D
 class Kingdoms():
     def GetProcess():
         ref = WinUniRef("Kingdoms.exe")
